@@ -41,23 +41,7 @@ export class HomepageComponent implements OnInit {
 
   constructor(
     private dialog: MatDialog,
-    mediaObserver: MediaObserver,
   ) {
-    this.change = 'lg';
-    this.watcher = mediaObserver.media$.subscribe((change: MediaChange) => {
-      console.log(change.mqAlias);
-
-      if (change.mqAlias === 'xs') {
-        this.change = 'xs';
-      } else if (change.mqAlias === 'sm') {
-        this.change = 'sm';
-      } else if (change.mqAlias === 'md') {
-        this.change = 'md';
-      }
-      else {
-        this.change = 'lg';
-      }
-    });
   }
 
   ngOnInit(): void {
