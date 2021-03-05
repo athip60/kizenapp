@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kizen"
+    }
+  },
+  "defaultProject": "kizen",
+  "cli": {
+    "analytics": "b03aad85-8d25-4f28-ae8f-e23249a87434"
+  }
 }
